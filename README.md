@@ -4,7 +4,7 @@
 ![MPI](https://img.shields.io/badge/MPI-Parallel-red.svg)
 ![Library](https://img.shields.io/badge/Library-deal.II-orange.svg)
 
-A high-performance, parallel Finite Element solver for the Advection-Diffusion-Reaction (ADR) equation. The project is developed using the [deal.II](https://www.dealii.org/) finite element library and implements a **Matrix-Free** approach, coupled with a Matrix-Free Geometric Multigrid (GMG) preconditioner.
+A high-performance, parallel Finite Element solver for the Advection-Diffusion-Reaction (ADR) equation. The project is developed using the [deal.II](https://www.dealii.org/) finite element library and implements a **Matrix-Free** approach, coupled with a Matrix-Free Geometric Multigrid (GMG) preconditioner. A detailed description of the project developement can be found in the [report](https://github.com/CristianoCorona/Matrix-Free-FE-Solver-ADR-Problem/blob/main/report.pdf).
 
 ## Prerequisites
 

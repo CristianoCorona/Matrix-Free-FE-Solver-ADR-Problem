@@ -1,9 +1,10 @@
 
 # Matrix-Free Solver for Advection-Diffusion-Reaction
+![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)
+![MPI](https://img.shields.io/badge/MPI-Parallel-red.svg)
+![Library](https://img.shields.io/badge/Library-deal.II-orange.svg)
 
-This repository contains a high-performance, massively parallel Finite Element solver for the Advection-Diffusion-Reaction (ADR) equation. The project is developed using the [deal.II](https://www.dealii.org/) finite element library and implements a **Matrix-Free** approach, coupled with a Matrix-Free Geometric Multigrid (GMG) preconditioner.
-
-This project was developed as part of the *Numerical Methods for Partial Differential Equations* and *High Performance Computing Engineering* courses at **Politecnico di Milano**.
+A high-performance, parallel Finite Element solver for the Advection-Diffusion-Reaction (ADR) equation. The project is developed using the [deal.II](https://www.dealii.org/) finite element library and implements a **Matrix-Free** approach, coupled with a Matrix-Free Geometric Multigrid (GMG) preconditioner.
 
 ## Prerequisites
 
@@ -46,8 +47,6 @@ These executables use analytical manufactured solutions to compute $L^2$ and $H^
 ### 3. Weak Scaling
 * `weak_scaling_free` / `weak_scaling_based`: Specifically designed for weak scaling benchmarks.
 
-### 4. Utilities
-* `calc_core`: A helper utility (compiled from `build/calc_core.cpp`) used during the benchmarking and scripting phases.
 
 ### Positional Arguments:
 
@@ -87,3 +86,17 @@ Run on 4 MPI processes, export VTU files (`0`), up to refinement level 5, with M
 mpirun -n 4 ./validation_free 0 5 -mg 3
 
 ```
+
+## Acknowledgments
+This project was developed for the **Numerical Methods for Partial Differntial Equations** course at **Politecnico di Milano** (A.Y. 2025-2026).
+
+* **[Prof. Alfio Quarteroni](https://www.polimi.it/il-politecnico/il-politecnico-nella-storia/i-professori-emeriti/alfio-maria-quarteroni)** 
+* **[Prof. Michele Bucelli](https://it.linkedin.com/in/michele-bucelli)**
+
+The simulation used in the presentation for this project were, in part, performed on the HPC Cluster of the Department of Mathematics of Politecnico di Milano which was funded by MUR grant Dipartimento di Eccellenza 2023-2027.
+
+## Authors
+* **[Daniele Confalonieri](https://github.com/DanieleConfalonieri)**
+* **[Cristiano Corona](https://github.com/CristianoCorona)**
+* **[Giorgio Mantoan](https://github.com/GiorgioMantoan02)**
+* **[Dmitrii Meshcheriakov](https://github.com/Dima765Me)**
